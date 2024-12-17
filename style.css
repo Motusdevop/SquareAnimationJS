@@ -1,0 +1,31 @@
+/* CSS styles */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin: 0px 0px;
+    overflow: hidden;
+}
+
+.start_btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    border-radius: 12%;
+    padding: 3% 2%;
+    top: 50%;
+    right: 25%;
+    left: 25%;
+    background-color: transparent;
+    color: white;
+    border: 3px solid rgba(151, 151, 151, 0.944);
+    z-index: 100;
+    display: block;
+}
+
+.start_btn:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+canvas {
+    background-color: rgba(56, 55, 54, 0.972);
+}
