@@ -3,9 +3,11 @@ let canvas = document.querySelector('canvas');
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-let scale = window.innerWidth / (600 * 3)
+let scale = window.innerWidth / (600 * 2.5)
 
 console.log(scale)
+
+const count_pixels = canvas.height * canvas.width / 5
 
 const deltaY = -50
 
@@ -13,12 +15,12 @@ let ctx = canvas.getContext('2d');
 
 let start_btn = document.querySelector('.start_btn');
 let square_color = '#5ac7f2'
-let back_color = '#404040'
+let back_color = '#303030'
 
 start_btn.addEventListener('click', () => {
 	start_btn.style.opacity = 0;
     console.log('hello');
-    drawPoints(ctx, 10000, 1);
+    drawPoints(ctx, count_pixels, 1);
 
     setTimeout(() => start_btn.remove(), 500)
 })
